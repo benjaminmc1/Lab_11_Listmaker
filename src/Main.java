@@ -11,7 +11,7 @@ public class Main {
         
         do {
             display(userIn);
-            query = SafeInput.getRegExString(in, "Enter what you would like to do: ", "AaDdPpQq");
+            query = SafeInput.getNonZeroLenString(in, "Enter what you would like to do: ");
 
             if(query.equals("A") || query.equals("a") || query.equals("P") || query.equals("p") || query.equals("D") || query.equals("d") || query.equals("Q") || query.equals("q")) {
                 if(query.equals("A") || query.equals("a")) {
